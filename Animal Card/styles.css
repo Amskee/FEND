@@ -1,0 +1,44 @@
+/* add your CSS here */
+.animal-picture
+{
+	width:300px;
+
+}
+#animal-card
+{
+	border-color: #A8AAAD;
+	border-style:solid;
+	border-width: 1px;
+	width:350px;
+	box-shadow: 7px 7px 3px 0px rgba(212,204,212,1);
+	-webkit-box-shadow: 7px 7px 3px 0px rgba(212,204,212,1);
+	-moz-box-shadow: 7px 7px 3px 0px rgba(212,204,212,1);
+}
+.article
+{
+margin:25px;
+}
+.fact
+{
+	font-style: italic;
+}
+span
+{
+	font-weight: bold;
+}
+ul
+{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.description
+{
+	border-color: #A8AAAD;
+	border-style: solid;
+	border-width: 1px;
+	margin-top:8px;
+    padding:3%;
+	width:280px;
+}
+
