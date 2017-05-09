@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amrish Kumar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+
+    <div class="container">
+    
+    <header>
+      <div class="row">
+        <div class="col-md-6">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" class="title-logo">
+            <title>Logo</title>
+            <path id="mark" fill="#02B3E4" d="M29 .1l-9 4.7v14.9c0 .6 0 1.3-.2 1.9-.1.6-.3 1.2-.5 1.7-.1.1-.1.3-.2.4-.3 0-2.5-.7-3.5-1.4-.4-.3-.8-.6-1.2-1-.4-.4-.7-.8-1-1.2-.3-.4-.6-.9-.8-1.4-.2-.5-.4-1-.5-1.6-.1-.5-.1-1.1-.1-1.6V1.2L10 0 0 5.9v13.7C0 25.9 5.1 31 11.3 31c2.1 0 4-.5 5.7-1.5l8.4-4.8c3.3-1.7 5.6-5.2 5.6-9.1V1.3L29 .1zM17.9 26.2c-.9.9-1.6 1.4-2.6 1.9-.6.2-1.3.5-1.9.7-.6.1-1.2.2-1.8.2-.6 0-1.6-.1-2.2-.2-.6-.1-1.2-.3-1.7-.5s-1.1-.5-1.6-.9c-1.3-.9-1.9-1.7-2.5-2.5-.3-.5-.6-1-.9-1.6-.2-.6-.4-1.1-.5-1.7-.2-.7-.2-1.4-.2-2V7.1l8-4.7v13.1c0 5 3.7 9.1 8.4 10.1-.2.2-.3.4-.5.6zm11-9c-.1.5-.3 1-.5 1.5s-.6 1.2-1 1.7c-.6.7-1.2 1.2-2.7 2.1-1.3.7-2.4.9-3.1 1.1.5-1.2.5-2.5.5-3.9L22 6l7-3.7v13.3c0 .5 0 1.1-.1 1.6z"></path>
+          </svg>
+        </div>
+        <div class="col-md-6 text-right text-uppercase">
+          <h1 class="title-super text-thin">Amrish Kumar</h1>
+          <h3>Front-end web developer</h3>
+        </div>
+      </div>
+    </header>
+    
+    <div class="row">
+      <picture class="col-md-12">
+        <source media="(min-width:1024px)" srcset="img/banner_1920.jpg">
+        <source media="(min-width: 750px)" srcset="img/banner_1920.jpg 2x, img/banner_960.jpg 1x" />
+        <source media="(min-width: 500px)" srcset="img/banner_480.jpg" />
+        <img src="img/banner_480.jpg" alt="portfolio banner" class="img-responsive banner">
+      </picture>
+    </div>
+
+    <div class="row">
+      <h2 class="col-md-12 text-muted">Featured Work</h2>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img class="img-responsive" src="img/work-sheldonisms.jpg" data-toggle="modal" data-target="#sheldonisms-modal" alt="sheldonisms image">
+        <h3>Sheldonisms</h3>
+        <p><a href="https://github.com/AvijitGhosh82/sheldonisms">Link to project</a></p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive" src="img/work-baymax.jpeg" data-toggle="modal" data-target="#baymax-modal" alt="baymax image">
+        <h3>Baymax - AI chat bot</h3>
+        <p><a href="https://github.com/AnirudhMurali/Baymax">Link to project</a></p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive" src="img/work-tanks.png" data-toggle="modal" data-target="#tanks-modal" alt="tanks image">
+        <h3>Battle of tanks Game</h3>
+        <p><a href="https://github.com/Amskee/Fury">Link to project</a></p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img class="img-responsive" src="img/work-datastructs.png" data-toggle="modal" data-target="#datastructs-modal" alt="data structues image">
+        <h3>Data Structures Visualizer</h3>
+        <p><a href="https://github.com/Amskee/LEMO">Link to project</a></p>
+      </div>
+      <div class="col-md-4">
+         <img class="img-responsive" src="img/work-virtualtour.jpg" data-toggle="modal" data-target="#virtualwalk-modal" alt="virtual reality image">
+        <h3>VirtuaWalk</h3>
+        <p><a href="https://www.facebook.com/3d.tvs/videos/538854909651122/">Link to project</a></p>
+      </div>
+    </div>
+    </div>
+
+    <footer>
+      <p class="portfolio-footer text-center">Design by Amrish</p>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="sheldonisms-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Sheldonisms</h4>
+          </div>
+          <div class="modal-body">
+            <section class="article-section">
+              <h2>Sheldonisms</h2>
+              <article class="article-description">
+                <img class="img-responsive" src="img/work-sheldonisms.jpg" alt="sheldonisms image">
+                <h2>Sheldonisms - a messenger chat bot</h2>
+                <p>Sheldonisms is an AI chat bot featuring the character Dr. Sheldon Cooper from the TV show The Big Bang Theory. The TV show is all about nerd humor filled valuable science facts. Our messenger bot replies with nerd humor and memes made from the show. I thought this to be an elite way a spreading common science while still having fun.</p>
+                <p><a href="https://github.com/AvijitGhosh82/sheldonisms">Link to project</a></p>
+              </article>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="baymax-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel1">Baymax</h4>
+          </div>
+          <div class="modal-body">
+            <section class="article-section">
+              <h2>Baymax</h2>
+              <article class="article-description">
+                <img class="img-responsive" src="img/work-baymax.jpeg" alt="baymax image">
+                <h2>Baymax - your personal health care assistant</h2>
+                <p>Baymax is a web app in construction, it's being developed to book doctor appointments through a chat bot. The chat bot predicts the user's input through an AI algorithm we've been developing, and makes proceedings accordingly. Work in progress.</p>
+              </article>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="tanks-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel2">Battle of tanks</h4>
+          </div>
+          <div class="modal-body">
+            <section class="article-section">
+              <h2>Battle of tanks</h2>
+              <article class="article-description">
+                <img class="img-responsive" src="img/work-tanks.png" alt="tanks image">
+                <h2>Battle of tanks - a couch warfest multiplayer game</h2>
+                <p>'Fury' is a 3D multiplayer tanks battle game created with unity 5.x . It is a single keyboard multi-player tanks game which is deployed to Windows Primarily. Above lies my github link for the source code. Have fun ! 
+                Other Platforms Supported : Android , Windows Phone , iOS . </p>
+              </article>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="datastructs-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel3">Data Structures Visualizer</h4>
+          </div>
+          <div class="modal-body">
+            <section class="article-section">
+              <h2>Data structure visualizer</h2>
+              <article class="article-description">
+                <img class="img-responsive" src="img/work-datastructs.png" alt="data stuctures image">
+                <h2>Data Structure Visualizer - a app to make learning data structures easy</h2>
+                <p>'XEMO' is a web based app created to visualize Data Structures and Algorithms. See emulation of Linked List yourself below . 'XEMO' is a web app developed using php,js,css3,jquery .
+                Github Link : https://github.com/Amskee/LEMO</p>
+              </article>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="virtualwalk-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel4">Battle of tanks</h4>
+          </div>
+          <div class="modal-body">
+            <section class="article-section">
+              <h2>Virtual Walk</h2>
+              <article class="article-description">
+                <img class="img-responsive" src="img/work-virtualtour.jpg" alt="virtual tour image">
+                <h2>VirtuaWalk - creating 3D models of the real world</h2>
+                <p>'VirtuaWalk' is a multi-platform app which visualizes Real World Buildings in 3D. The first deployment of 'VirtuaWalk' was to visualize my institution as 3D building and explore inside using a fictional character controlled by the user. Other Platforms deployed : Android,iOS . This app was built using Unity</p>
+              </article>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modals -->
+  </body>
+</html>
