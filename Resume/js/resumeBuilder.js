@@ -17,7 +17,7 @@ var work = {
 			description: "Kharagpur Winter of Code is a 5-week long online program for open source software development. Students from various institutions contributed to the projects listed and topped their names in the leader board of top contributors. It was great that I secured top 4th contributor of the program. I have blogged my full experience."
 		}
 	]
-}
+};
 
 
 var projects = {
@@ -35,7 +35,7 @@ var projects = {
 			images: ["./images/p21.jpeg"]
 		}
 	]
-}
+};
 
 
 var bio = {
@@ -89,7 +89,7 @@ var education = {
 			url: "edx.org"
 		}
 	],
-}
+};
 
 /*Bio Builder*/
 
@@ -121,7 +121,7 @@ bio.display = function () {
 		var formattedSkills = HTMLskills.replace("%data%", skill);
 		$("#skills").append(formattedSkills);
 	});	
-}	
+};
 
 /* Works Builder */
 
@@ -140,7 +140,7 @@ work.display = function() {
 		$(".work-entry:last").append(formattedWorkLocation);
 		$(".work-entry:last").append(formattedWorkDescription);
 	});
-}
+};
 
 projects.display = function() {
 	projects.projects.forEach( function(project) {
@@ -156,7 +156,7 @@ projects.display = function() {
 			$(".project-entry:last").append(formattedImage);
 		});
 	});
-}
+};
 
 education.display = function() {
 	education.schools.forEach( function(school) {
@@ -189,7 +189,7 @@ education.display = function() {
 		$(".education-entry:last").append(formattedURL);
 
 	});
-}
+};
 
 var buildFooter = function() {
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
@@ -202,7 +202,7 @@ var buildFooter = function() {
 	$("#footerContacts").append(formattedGithub);
 	$("#footerContacts").append(formattedTwitter);
 	$("#footerContacts").append(formattedLocation);
-}
+};
 
 bio.display();
 work.display();
@@ -220,5 +220,5 @@ var inName = function() {
  	arr[1] = arr[1].toUpperCase();
  	console.log(arr[0] + " " + arr[1]);
  	return arr[0] + " " + arr[1];
-}
+};
 
