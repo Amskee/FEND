@@ -105,11 +105,11 @@ bio.display = function () {
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 	$("#header").prepend(formattedHeaderRole);
 	$("#header").prepend(formattedHeaderName);
-	$("#topContacts").append(formattedMobile);
-	$("#topContacts").append(formattedEmail);
-	$("#topContacts").append(formattedGithub);
-	$("#topContacts").append(formattedTwitter);
-	$("#topContacts").append(formattedLocation);
+	$("#topContacts, #footerContacts").append(formattedMobile);
+	$("#topContacts, #footerContacts").append(formattedEmail);
+	$("#topContacts, #footerContacts").append(formattedGithub);
+	$("#topContacts, #footerContacts").append(formattedTwitter);
+	$("#topContacts, #footerContacts").append(formattedLocation);
 	$("#header").append(formattedWelcomeMsg);
 	$("#header").append(formattedBioPic);
 
@@ -191,25 +191,13 @@ education.display = function() {
 	});
 };
 
-var buildFooter = function() {
-	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-	var formattedTwitter = HTMLgithub.replace("%data%", bio.contacts.twitter);
-	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-	$("#footerContacts").append(formattedMobile);
-	$("#footerContacts").append(formattedEmail);
-	$("#footerContacts").append(formattedGithub);
-	$("#footerContacts").append(formattedTwitter);
-	$("#footerContacts").append(formattedLocation);
-};
 
 bio.display();
 work.display();
 projects.display();
 education.display();
 $("#mapDiv").append(googleMap);
-buildFooter();
+
 
 //$("#main").append(internationalizeButton);
 
