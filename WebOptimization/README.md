@@ -23,6 +23,6 @@
 	* JavaScript related to analytics are taken to the end of the document.
 
 * Optimizations in pizza app
-	* JavaScript has been updated. Refer comments in `main.js` for detail description.
+	* JavaScript has been updated. Refer comments in `main.js` for detailed description.
 	* Layout thrashing has been removed by separating recalculate layout and styles code in JS.
 	* Changing pizza size function has been optimized to run under 5 ms.
