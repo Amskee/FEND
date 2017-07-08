@@ -455,7 +455,7 @@ var resizePizzas = function(size) {
     //since the size calculation for all pizzas is the same, it's done only once.
     var newwidth;
     var dx = determineDx(pizzaContainer[0], size);
-    var newwidth = (pizzaContainer[0].offsetWidth + dx) + 'px';
+    newwidth = (pizzaContainer[0].offsetWidth + dx) + 'px';
     
     //all pizzas are altered at once.
     for (var i = 0; i < pizzaContainer.length; i++) {
@@ -519,7 +519,7 @@ function updatePositions() {
 
   //update element positions. 
   //This separates recalculation and styling hence avoid Layout thrashing.
-  for (var i = 0; i < items.length; i++) {
+  for (i = 0; i < items.length; i++) {
     items[i].style.left = items[i].basicLeft + 100 * phase[i] + 'px';
   }
 
