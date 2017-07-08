@@ -449,10 +449,17 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
-    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
+    //all pizza containers are stored in a variable instead of redundant selection.
+    var pizzaContainer = document.querySelectorAll(".randomPizzaContainer");
+    
+    //since the size calculation for all pizzas is the same, it's done only once.
+    var newwidth;
+    var dx = determineDx(pizzaContainer[0], size);
+    var newwidth = (pizzaContainer[0].offsetWidth + dx) + 'px';
+    
+    //all pizzas are altered at once.
+    for (var i = 0; i < pizzaContainer.length; i++) {
+      pizzaContainer[i].style.width = newwidth;
     }
   }
 
@@ -501,10 +508,19 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
+  //phase array to store precalculated values
+  var phase = [];
   var items = document.querySelectorAll('.mover');
+
+  //calculate phase values
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
-    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+    phase[i] = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+  }
+
+  //update element positions. 
+  //This separates recalculation and styling hence avoid Layout thrashing.
+  for (var i = 0; i < items.length; i++) {
+    items[i].style.left = items[i].basicLeft + 100 * phase[i] + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
