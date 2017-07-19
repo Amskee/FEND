@@ -3,7 +3,7 @@
 Neighborhood map is a web application that displays a list of places to visit in the city **Madurai**.
 The app displays a list of tourist spots both on the side bar and on a integrated Google map. Users could use the search box for searching a specific place, the app displays the Spots on the map with Wikipedia articles about them. Happy visiting :)
 
-## App features
+* App features
 	* Google maps API is used.
 	* Locations are displayed on the side list and are marked in the map.
 	* When a search operation is done, the results are updated on the list and map.
@@ -12,7 +12,7 @@ The app displays a list of tourist spots both on the side bar and on a integrate
 	* The information window is filled with the title of the location and links to respective Wikipedia articles of the place.
 	* The side list could be toggled to show and hide in mobile devices.
 
-## Running the app
+* Running the app
 	* Link to [live website](https://amskee.github.io/FEND/Neighborhood_Map/index.html).
 	* Link to [Github repo](https://github.com/Amskee/FEND/tree/master/Neighborhood_Map).
 	* Clone or download the repository.
