@@ -1,0 +1,70 @@
+
+/*Header style*/
+
+.app-head {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 3%;
+	background-color: #81e6ef;
+}
+
+/*Defines styles for view boxes*/
+
+.search-view {
+	margin: 10px 0;
+}
+
+.list-view {
+	height: auto;
+}
+
+.map-view {
+	height: 1000px;
+}
+
+/*Defines styles for elements in view boxes*/
+
+.search-box {
+	height: 50px;
+	width: 70%;
+}
+
+.google-map {
+	height: 100%;
+	margin: 0px;
+}
+
+.list-item {
+	list-style-type: none;
+	margin: 5%;
+	background-color: #fafafa;
+	text-align: center;
+	font-size: 24px;
+	padding: 5%;
+}
+
+.marker-title {
+	text-align: center;
+	font-weight: bold;
+}
+
+.api-error {
+	list-style-type: none;
+	color: red;
+}
+
+.map-error {
+	text-align: center;
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+.toggle-sidebar {
+	margin: 1%;
+	padding: 1%;
+	width: 30%;
+	background-color: #5ae8ad;
+	border-radius: 12px;
+}
+
