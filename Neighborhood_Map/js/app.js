@@ -49,7 +49,7 @@ var Item = function(item) {
         dataType: "jsonp"
     }).done(function(data) {
         length = data[1].length;
-        if(length==0) {
+        if(length===0) {
           self.apiContent = self.apiContent + "<li>No articles found</li>";
         }
         for(var i = 0; i < length ; i++){
@@ -89,7 +89,7 @@ var Item = function(item) {
   //toggles visibility of marker.
   //used in view model search functionality.
   this.setMarkerVisibility = function(visible) {
-    if(visible==true)
+    if(visible===true)
       self.marker.setMap(map);
     else
       self.marker.setMap(null);
