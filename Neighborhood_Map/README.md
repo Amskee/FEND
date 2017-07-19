@@ -20,4 +20,4 @@ The app displays a list of tourist spots both on the side bar and on a integrate
 	* Open `index.html` to run the app.
 	* Make sure JavaScript is enabled in your browser.
 ## Note
-The Wikipedia API doesn't work in the live version since it is hosted in Github pages. I recommend to download the project and run it locally.
+The **Wikipedia API doesn't work in the live website** since it is hosted in Github pages. I recommend to download the project and **run it locally**.
