@@ -7,7 +7,7 @@ The app displays a list of tourist spots both on the side bar and on a integrate
 	* Google maps API is used.
 	* Locations are displayed on the side list and are marked in the map.
 	* When a search operation is done, the results are updated on the list and map.
-	* **Wikipedia API (MediaWiki) is used.**
+	* Wikipedia API (MediaWiki) is used.
 	* When a location is clicked either on the list or map, a information window is opened.
 	* The information window is filled with the title of the location and links to respective Wikipedia articles of the place.
 	* The side list could be toggled to show and hide in mobile devices.
