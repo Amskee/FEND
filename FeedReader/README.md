@@ -7,8 +7,7 @@ The testing is implemented using the Jasmine library.
 	* Download zip file or clone the repository.
 	* Extract zip file if downloaded.
 	* Open `index.html` to launch the application.
-	* Link to [live website]().
-	* Link to [Github repo]().
+	* Link to [Github repo](https://github.com/Amskee/FEND/tree/master/FeedReader).
 
 # Test suites
 
