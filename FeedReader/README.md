@@ -3,7 +3,7 @@
 Feed Reader is a project which tests the functionalities (expectations) of a Feed Reader application.
 The testing is implemented using the Jasmine library.
 
-# Launching the application
+* Launching the application
 	* Download zip file or clone the repository.
 	* Extract zip file if downloaded.
 	* Open `index.html` to launch the application.
