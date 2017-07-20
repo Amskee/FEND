@@ -94,7 +94,7 @@ $(function() {
          });
 
          it('There is atleast single .entry element', function() {
-            expect($('.entry').length).toBeGreaterThan(0);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
          });
     });
 
@@ -105,11 +105,14 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
-        var feedBefore = $('.feed').html(), feedAfter;
+        var feedBefore, feedAfter;
 
         beforeEach( function(done) {
             loadFeed(0, function() {
-                done();
+                feedBefore = $('.feed').html();
+                loadFeed(1, function() {
+                    done();
+                });
             });
         });
 
